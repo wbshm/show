@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角形简易计算器</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>三角形简易计算器</h1>
+                <div class="app-screenshots">
+                    <div class="screenshot-left">
+                        <img src="screenshot/shot1.PNG" alt="三角形计算器应用截图 - 左侧" loading="lazy">
+                    </div>
+                    <div class="qrcode-center">
+                        <img src="screenshot/qrcode.png" alt="微信小程序二维码" class="qrcode">
+                        <p>使用微信扫一扫</p>
+                    </div>
+                    <div class="screenshot-right">
+                        <img src="screenshot/shot2.PNG" alt="三角形计算器应用截图 - 右侧" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 三角形简易计算器 - 记录每一分价值</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为项目卡片添加悬停效果
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

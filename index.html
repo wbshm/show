@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人作品展示 - GitHub Pages</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">个人作品集</h1>
+            <p class="subtitle">展示我的开发项目</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <h2>欢迎来到我的作品展示</h2>
+                <p>这里展示了我开发的各种项目，包括工具应用、计算器等。每个项目都经过精心设计和开发，旨在解决实际问题。</p>
+            </section>
+
+            <section class="projects">
+                <h2>我的项目</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="mini_triangle/screenshot/shot1.PNG" alt="三角形计算器截图1" loading="lazy">
+                        </div>
+                        <div class="project-content">
+                            <h3>三角形简易计算器</h3>
+                            <p>一个功能强大的三角形计算工具，可以计算三角形的各种属性，包括面积、周长、角度等。</p>
+                            <div class="project-tags">
+                                <span class="tag">计算器</span>
+                                <span class="tag">数学工具</span>
+                                <span class="tag">实用工具</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="mini_triangle/mini_triangle.html" class="btn btn-primary">查看详情</a>
+                                <a href="mini_triangle/screenshot/qrcode.png" class="btn btn-secondary" target="_blank">查看二维码</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 未来可以添加更多项目卡片 -->
+                    <div class="project-card coming-soon">
+                        <div class="project-content">
+                            <h3>更多项目即将到来</h3>
+                            <p>我正在开发更多有趣的项目，敬请期待！</p>
+                            <div class="project-tags">
+                                <span class="tag">即将发布</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 个人作品展示. 托管于 GitHub Pages.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单的交互效果
+        document.addEventListener('DOMContentLoaded', function() {
+            // 为项目卡片添加悬停效果
+            const projectCards = document.querySelectorAll('.project-card');
+            projectCards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-5px)';
+                });
+                card.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
